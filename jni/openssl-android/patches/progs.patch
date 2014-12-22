@@ -1,0 +1,18 @@
+--- openssl-1.0.1j/orig/apps/progs.h	2014-10-15 07:53:39.000000000 -0500
++++ openssl-1.0.1j/apps/progs.h	2014-12-21 22:31:42.000000000 -0600
+@@ -147,10 +147,14 @@
+ 	{FUNC_TYPE_GENERAL,"ocsp",ocsp_main},
+ #endif
+ 	{FUNC_TYPE_GENERAL,"prime",prime_main},
+-	{FUNC_TYPE_GENERAL,"ts",ts_main},
++#if 0 /* ANDROID */
++    {FUNC_TYPE_GENERAL,"ts",ts_main},
++#endif
+ #ifndef OPENSSL_NO_SRP
++#if 0 /* ANDROID */
+ 	{FUNC_TYPE_GENERAL,"srp",srp_main},
+ #endif
++#endif
+ #ifndef OPENSSL_NO_MD2
+ 	{FUNC_TYPE_MD,"md2",dgst_main},
+ #endif
