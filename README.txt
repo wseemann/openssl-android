@@ -3,7 +3,7 @@ This is a version of the official Android openssl sources, but it is meant to be
 
 To build:
 cd openssl-android
-/path/to/android-ndk-r5b/ndk-build
+/path/to/android-ndk-r10c/ndk-build
 
 
 http://guardianproject.info
